@@ -1,0 +1,113 @@
+---
+layout: page
+title: "About"
+description: "Hey, this is SparkFour."
+header-img: "img/about-bg.jpg"
+---
+
+<!-- Language Selector -->
+<select onchange= "onLanChange(this.options[this.options.selectedIndex].value)">
+    <option value="0" selected> 中文 Chinese </option>
+    <option value="1"> 英语 English </option>
+</select>
+
+<!-- Chinese Version -->
+<div class="zh">
+    <blockquote>
+        写写代码，写写代码，看看电影。玩玩游戏，吃吃东西，走走世界
+    </blockquote>
+
+    <p>目前在读研究生一枚，在<a target="_blank" href="http://www.bit.edu.cn">北京理工大学</a>攻读计算机科学与技术学术硕士，研究领域包括大数据聚类、检索等。</p>
+
+    <p>程序员，从事iOS开发，也喜欢捣鼓一些其他的程序语言</p>
+
+
+    <p>喜欢看看电影，看看动漫，听听音乐，泡泡各种技术社区，闲来也刷刷微博知乎等。</p>
+
+    <p>哦对了，我叫<b>唐育洋</b>
+
+    <hr>
+    附上认真版的简历:
+    <ul class="active-list">
+        <li>暂无附件</li>
+
+
+    </ul>
+
+    一些期待成为的角色:
+    <ul>
+        <li> iOS Developer </li>
+        <li> Product Engineer </li>
+        <li> Creative Technologist </li>
+        <li> "Full Stack" Engineer/Designer </li>
+    </ul>
+</div>
+
+<!-- English Version -->
+<div class="en">
+    <blockquote>
+        Creative work, beautiful life. 
+    </blockquote>
+
+    <p>Student, major in computer science in <a target="_blank" href="http://www.bit.edu.cn">Beijing Institute of Technology</a></p>
+
+    <p>Programmer, iOS developer</p>
+
+    <p>My Chinese name is <b>Tang Yuyang</b>, you can call me English name <b>Dason</b> for short.</p>
+
+    <hr>
+    Interested in more details? Just checkout my resumes:
+    <ul class="active-list">
+        <li>no attenchment for temporary</li>
+
+
+    </ul>
+
+    My dream position include:
+    <ul>
+        <li> iOS Developer </li>
+        <li> Product Engineer </li>
+        <li> Creative Technologist </li>
+        <li> "Full Stack" Engineer/Designer </li>
+    </ul>
+</div>
+
+
+<!-- Handle Language Change -->
+<script type="text/javascript">
+    var $zh = document.querySelector(".zh");
+    var $en = document.querySelector(".en");
+    function onLanChange(index){
+        if(index == 0){
+            $zh.style.display = "block";
+            $en.style.display = "none";
+        }else{
+            $en.style.display = "block";
+            $zh.style.display = "none";
+        }
+    }
+    onLanChange(0);
+</script>
+
+
+{% if site.useDuoshuo %}
+<!-- 多说评论框 start -->
+    <div class="comment">
+        <div class="ds-thread" data-thread-key="{{page.id}}" data-title="{{page.title}}" data-url="{{site.url}}/about/"></div>
+    </div>
+<!-- 多说评论框 end -->
+
+<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"spark"};
+    (function() {
+        var ds = document.createElement('script');
+        ds.type = 'text/javascript';ds.async = true;
+        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+        ds.charset = 'UTF-8';
+        (document.getElementsByTagName('head')[0]
+         || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+</script>
+<!-- 多说公共JS代码 end -->
+{% endif %}

@@ -1,0 +1,18 @@
+---
+layout:     post
+title:      "Hello 2015"
+subtitle:   " \"Hello World, Hello Blog\""
+date:       2015-01-29 12:00:00
+author:     "SparkFour"
+header-img: "img/post/art-2015.jpg"
+tags:
+    - 生活
+---
+
+> **“Move on. ”**
+
+新的开始了，决定好好努力一些，本科阶段已经过去，总体上感觉有好有坏的吧。这几天想了想，研究生阶段一定要进步更快才行，技术上和科研上。
+
+顺便用jekyll搭了博客，记录学习过程。
+
+Fighting，SparkFour!!! 
